@@ -6,9 +6,13 @@ public class Rendimento {
 	private double juros;
 	private double aliquota;
 	private double rendimentoBruto;
+	private int dias;
 	
-	public Rendimento (double aplicacaoInicial, double juros, double aliquota) {
+	public Rendimento (double aplicacaoInicial,int dias,double juros) {
 		
+		setAplicacaoInicial(aplicacaoInicial);
+		setDias(dias);
+		setJuros(juros);
 	}
 
 	public double getAplicacaoInicial() {
@@ -41,5 +45,13 @@ public class Rendimento {
 
 	public void setRendimentoBruto(double rendimentoBruto) {
 		this.rendimentoBruto = rendimentoBruto;
+	}
+
+	public int getDias() {
+		return dias;
+	}
+
+	public void setDias(int dias) {
+		this.dias = dias;
 	}
 }

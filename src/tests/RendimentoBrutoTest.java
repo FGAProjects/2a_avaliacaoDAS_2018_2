@@ -4,22 +4,23 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import aplicacao.Imposto;
 import aplicacao.Rendimento;
 
 public class RendimentoBrutoTest {
 	
-	public static Imposto;
+	static Imposto imposto;
 	
 	@Test
 	public void testRendimentoBruto() {
 		
 		double aplicacaoInicial = 1000;
 		double juros = 8.5;
-		double aliquota = 22.5;
+		int dias = 60;
 		
-		Rendimento rendimento = new Rendimento(aplicacaoInicial,juros,aliquota);
+		Rendimento rendimento = new Rendimento(aplicacaoInicial,dias,juros);
 		
-		assertTrue(Imposto.cadastraRendimento(rendimento));
+		assertEquals(13.97, rendimento.getRendimentoBruto(), 0f);
 	}
 	
  /*
