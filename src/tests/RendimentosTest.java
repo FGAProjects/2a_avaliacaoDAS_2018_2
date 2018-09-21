@@ -43,9 +43,14 @@ public class RendimentosTest {
 		};
 		Object[] parametros2 = new Object[]{500,120,8,rendimentos2,1500};
 		
+		ParametrosRendimentosTest[] rendimentos3 = new ParametrosRendimentosTest[] {
+				new ParametrosRendimentosTest(3000, 240, 9)
+		};
+		Object[] parametros3 = new Object[]{3000,240,9,rendimentos3,1500};
+		
 		return Arrays.asList(new Object[][] {
 			
-			parametros1,parametros2
+			parametros1,parametros2,parametros3
 		});
 	}
 }
