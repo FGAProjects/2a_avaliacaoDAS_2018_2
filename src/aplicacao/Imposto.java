@@ -9,6 +9,7 @@ public class Imposto {
 	public static boolean cadastraRendimento(Rendimento rendimento) {
 		
 		boolean resposta = rendimentos.add(rendimento);
+		
 		return resposta;
 	}
 	
@@ -33,5 +34,26 @@ public class Imposto {
 		aliquota = (double) rendimento.getAliquota() / 100;
 		
 		return aliquota;
+	}
+	
+	public static double totalAplicacao(Rendimento rendimento) {
+		
+		double total = 0;
+		for(int aux = 0; aux < rendimentos.size(); aux ++) {
+			
+			total += rendimentos.get(aux).getAplicacaoInicial();
+		}
+		
+		return total;
+	}
+	
+	public static double calculaRendimentoBruto(Rendimento rendimento) {
+		
+		double rendimentoBruto = 0;
+		
+		
+		rendimentoBruto = rendimento.getAplicacaoInicial() * (rendimento.getJuros()/100);
+		
+		return 0;
 	}
 }

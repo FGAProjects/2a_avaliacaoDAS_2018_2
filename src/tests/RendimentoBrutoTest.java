@@ -21,7 +21,7 @@ public class RendimentoBrutoTest {
 		Rendimento rendimento = new Rendimento(aplicacaoInicial,dias,juros);
 		
 		assertTrue(imposto.cadastraRendimento(rendimento));
-		assertEquals(60, imposto.calculaAliquota(rendimento),0f);
+		assertEquals(1000, imposto.totalAplicacao(rendimento),0f);
 	}
 	
  /*
