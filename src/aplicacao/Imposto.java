@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Imposto {
 	
-	static ArrayList<Rendimento> rendimentos = new ArrayList<Rendimento>();
+	public static ArrayList<Rendimento> rendimentos = new ArrayList<Rendimento>();
 	
 	public static boolean cadastraRendimento(Rendimento rendimento) {
 		
@@ -47,7 +47,7 @@ public class Imposto {
 		return total;
 	}
 	
-	public static double calculaRendimentoBruto(Rendimento rendimento) {
+	/*public static double calculaRendimentoBruto(Rendimento rendimento) {
 		
 		double rendimentoBruto = 0;
 		
@@ -55,5 +55,5 @@ public class Imposto {
 		rendimentoBruto = rendimento.getAplicacaoInicial() * (rendimento.getJuros()/100);
 		
 		return 0;
-	}
+	}*/
 }

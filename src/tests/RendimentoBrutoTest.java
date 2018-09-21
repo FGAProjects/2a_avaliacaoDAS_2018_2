@@ -23,20 +23,4 @@ public class RendimentoBrutoTest {
 		assertTrue(imposto.cadastraRendimento(rendimento));
 		assertEquals(1000, imposto.totalAplicacao(rendimento),0f);
 	}
-	
- /*
-  @Test
-	public void test2opasso_CadastrarRendimentoDuplicado() throws RendimentosNulosException {
-		String descricao = "Salario"; 
-		float valor = 3000f;
-		
-		System.out.println(2 + " " + irpf);
-		Rendimento r = new Rendimento(descricao, valor);
-		
-		assertTrue(irpf.cadastrarRendimento(r));
-		assertEquals(8000f, irpf.totalRendimentos(), 0f);
-		assertEquals(1, irpf.numRendimentos());
-	}
-  */
-
 }

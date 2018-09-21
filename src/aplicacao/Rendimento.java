@@ -5,7 +5,6 @@ public class Rendimento {
 	private double aplicacaoInicial;
 	private double juros;
 	private double aliquota;
-	private double rendimentoBruto;
 	private int dias;
 	
 	public Rendimento (double aplicacaoInicial,int dias,double juros) {
@@ -37,14 +36,6 @@ public class Rendimento {
 
 	public void setAliquota(double aliquota) {
 		this.aliquota = aliquota;
-	}
-
-	public double getRendimentoBruto() {
-		return 13.97;
-	}
-
-	public void setRendimentoBruto(double rendimentoBruto) {
-		this.rendimentoBruto = rendimentoBruto;
 	}
 
 	public int getDias() {
